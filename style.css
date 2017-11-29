@@ -3,3 +3,10 @@
 	background-repeat: repeat-y;
 	height:600px;
 }
+.question {
+	margin-left:0.25in;
+	font-weight: bold;
+}
+.answers {
+	margin-left:0.75in;
+}
