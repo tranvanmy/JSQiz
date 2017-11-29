@@ -1,203 +1,201 @@
-{
-    "quizs": [
-        {
-            "question": "JavaScript là ngôn ngữ xử lý ở :",
-            "answers": [
-                "Client",
-                "Server",
-                "Server/client",
-                "Không có dạng nào"
-            ],
-            "correct_answer": 0
-        },
-        {
-            "question": "Javascript là ngôn ngữ thông dịch hay biên dịch",
-            "answers": [
-                "Thông dịch",
-                "Diễn dịch",
-                "Cả hai dạng",
-                "Không có dạng nào ở trên"
-            ],
-            "correct_answer": 0
-        },
-        {
-            "question": "Phương thức viết chương trình của Javascript như thế nào?",
-            "answers": [
-                "Viết riêng một trang",
-                "Viết chung với HTML",
-                "Cả hai dạng",
-                "Không có dạng nào ở trên"
-            ],
-            "correct_answer": 2
-        },
-        {
-            "question": "Javascript là ngôn ngữ kịch bản có dấu được mã nguồn không?",
-            "answers": [
-                "Không dấu được vì các kịch bản chạy ở client",
-                "Dấu được vì chương trình hoạt động độc lập với trình duyệt",
-                "Hai phát biểu đều sai."
-            ],
-            "correct_answer": 0
-        },
-        {
-            "question": "JavaScript được bắt đầu bằng?",
-            "answers": [
-                "<script></script>",
-                "<Javascript><Javascript>",
-                "<java></java>",
-                "Tất cả các dạng trên."
-            ],
-            "correct_answer": 0
-        },
-        {
-            "question": "Javascript có các dạng biến?",
-            "answers": [
-                "Number, String, Boolean",
-                "Number, Integer, char",
-                "Number, String, Boolean, Null",
-                "Tất cả các loại trên"
-            ],
-            "correct_answer": 2
-        },
-        {
-            "question": "Trong Javascript hàm parseInt() dùng để làm gì?",
-            "answers": [
-                "Chuyển một chuỗi thành số",
-                "Chuyển một chuỗi thành số nguyên",
-                "Chuyển một chuỗi thành số thực",
-                "Chuyển một số nguyên thành một chuỗi"
-            ],
-            "correct_answer": 1
-        },
-        {
-            "question": "Lệnh prompt trong Javascript để làm gì?",
-            "answers": [
-                "Hiện một thông báo nhập thông tin ",
-                "Hiện một thông báo dạng yes, No",
-                "Cả hai dạng trên",
-                "Không có lệnh nào đúng"
-            ],
-            "correct_answer": 0
-        },
-        {
-            "question": "Trong Javascript sự kiện Onload thực hiện khi:",
-            "answers": [
-                "Khi bắt đầu chương trình chạy",
-                "Khi click chuột",
-                "Khi kết thúc một chương trình",
-                "Khi di chuyển chuột qua"
-            ],
-            "correct_answer": 0
-        },
-        {
-            "question": "Trong Javascript sự kiện OnUnload thực hiện khi nào?",
-            "answers": [
-                "Khi bắt đầu chương trình chạy",
-                "Khi click chuột",
-                "Khi kết thúc một chương trình",
-                "Khi di chuyển chuột qua"
-            ],
-            "correct_answer": 2
-        },
-        {
-            "question": "Trong Javascript sự kiện Onblur thực hiện khi nào?",
-            "answers": [
-                "Khi một đối tượng trong form mất focus.",
-                "Khi một đối tượng trong form có focus",
-                "Khi di chuyển con chuột qua form.",
-                "Khi click chuột vào nút lệnh"
-            ],
-            "correct_answer": 0
-        },
-        {
-            "question": "Trong Javascript sự kiện OnMouseOver thực hiện khi nào?",
-            "answers": [
-                "Khi một đối tượng trong form mất focus.",
-                "Khi một đối tượng trong form có focus",
-                "Khi di chuyển con chuột qua một đối tượng trong form."
-                "Khi click chuột vào nút lệnh"
-            ],
-            "correct_answer": 2
-        },
-        {
-            "question": "Trong Javascript sự kiện Onclick thực hiện khi nào?",
-            "answers": [
-                "Khi một đối tượng trong form mất focus.",
-                "Khi một đối tượng trong form có focus",
-                "Khi click chuột vào một đối tượng trong form.",
-                "Khi click chuột vào nút lệnh"
-            ],
-            "correct_answer": 2
-        },
-        {
-            "question": "Trong Javascript sự kiện Onchange thực hiện khi nào?",
-            "answers": [
-                "Khi một đối tượng trong form mất focus.",
-                "Khi một đối tượng trong form có focus",
-                "Xảy ra khi giá trị của một trường trong form được người dùng thay đổi",
-                "Khi click chuột vào nút lệnh"
-            ],
-            "correct_answer": 2
-        },
-        {
-            "question": "Lệnh lặp for có dạng như thế nào?",
-            "answers": [
-                "for ( biến = Giá trị đầu; Điều kiện; Giá trị tăng)",
-                "for ( biến = Giá trị đầu; Giá trị tăng; điều kiện)",
-                "for ( biến = Điều kiện; Giá trị tăng; Giá trị cuối)",
-                "Tất cả các dạng trên."
-            ],
-            "correct_answer": 0
-        },
-        {
-            "question": "Vòng lặp While là dạng vòng lặp?",
-            "answers": [
-                "Không xác định và xét điều kiện rồi mới lặp",
-                "Không xác định và  lặp rồi mới xét điều kiện",
-                "Cả hai dạng trên",
-                "Không tồn tại dạng nào ở trên"
-            ],
-            "correct_answer": 0
-        },
-        {
-            "question": "Vòng lặp (Do.. while) là dạng vòng lặp?",
-            "answers": [
-                "Không xác định và xét điều kiện rồi mới lặp",
-                "Không xác định và  lặp rồi mới xét điều kiện",
-                "Cả hai dạng trên",
-                "Không tồn tại dạng nào ở trên"
-            ],
-            "correct_answer": 1
-        },
-        {
-            "question": "Lệnh break kết hợp với vòng for dùng để?",
-            "answers": [
-                "Ngưng vòng for nếu gặp lệnh này",
-                "Không có ý nghĩa trong vòng lặp",
-                "Nhảy đến một tập lệnh khác",
-                "Không thể kết hợp được."
-            ],
-            "correct_answer": 0
-        },
-        {
-            "question": "Hàm alert() dùng để làm gì?",
-            "answers": [
-                "Dùng để hiện một thông",
-                "Dùng để hiện một thông báo nhập",
-                "Dùng để chuyển đổi số sang chữ",
-                "Tất cả các dạng trên."
-            ],
-            "correct_answer": 0
-        },
-        {
-            "question": "Thẻ <Frameset cols> </frameset>",
-            "answers": [
-                "Dùng để chia trang web ra nhiều phần theo cột",
-                "Dùng để chia trang web ra nhiều phần theo dòng",
-                "Tất cả dạng trên",
-                "Không có ý nào ở trên."
-            ],
-            "correct_answer": 0
-        },
-    ]
-}
+[
+    {
+        "question": "Javascript là ngôn ngữ thông dịch hay biên dịch",
+        "answers": [
+            "Thông dịch",
+            "Diễn dịch",
+            "Cả hai dạng",
+            "Không có dạng nào ở trên"
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Phương thức viết chương trình của Javascript như thế nào?",
+        "answers": [
+            "Viết riêng một trang",
+            "Viết chung với HTML",
+            "Cả hai dạng",
+            "Không có dạng nào ở trên"
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": "JavaScript được bắt đầu bằng?",
+        "answers": [
+            "<script></script>",
+            "<Javascript><Javascript>",
+            "<java></java>",
+            "Tất cả các dạng trên."
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Javascript có các dạng biến?",
+        "answers": [
+            "Number, String, Boolean",
+            "Number, Integer, char",
+            "Number, String, Boolean, Null",
+            "Tất cả các loại trên"
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": "Trong Javascript hàm parseInt() dùng để làm gì?",
+        "answers": [
+            "Chuyển một chuỗi thành số",
+            "Chuyển một chuỗi thành số nguyên",
+            "Chuyển một chuỗi thành số thực",
+            "Chuyển một số nguyên thành một chuỗi"
+        ],
+        "correct_answer": "1"
+    },
+    {
+        "question": "Lệnh prompt trong Javascript để làm gì?",
+        "answers": [
+            "Hiện một thông báo nhập thông tin ",
+            "Hiện một thông báo dạng yes, No",
+            "Cả hai dạng trên",
+            "Không có lệnh nào đúng"
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Trong Javascript sự kiện Onload thực hiện khi:",
+        "answers": [
+            "Khi bắt đầu chương trình chạy",
+            "Khi click chuột",
+            "Khi kết thúc một chương trình",
+            "Khi di chuyển chuột qua"
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Trong Javascript sự kiện OnUnload thực hiện khi nào?",
+        "answers": [
+            "Khi bắt đầu chương trình chạy",
+            "Khi click chuột",
+            "Khi kết thúc một chương trình",
+            "Khi di chuyển chuột qua"
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": "Trong Javascript sự kiện Onblur thực hiện khi nào?",
+        "answers": [
+            "Khi một đối tượng trong form mất focus.",
+            "Khi một đối tượng trong form có focus",
+            "Khi di chuyển con chuột qua form.",
+            "Khi click chuột vào nút lệnh"
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Trong Javascript sự kiện Onblur thực hiện khi nào?",
+        "answers": [
+            "Khi một đối tượng trong form mất focus.",
+            "Khi một đối tượng trong form có focus",
+            "Khi di chuyển con chuột qua form.",
+            "Khi click chuột vào nút lệnh"
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Trong Javascript sự kiện Onchange thực hiện khi nào?",
+        "answers": [
+            "Khi một đối tượng trong form mất focus.",
+            "Khi một đối tượng trong form có focus",
+            "Xảy ra khi giá trị của một trường trong form được người dùng thay đổi",
+            "Khi click chuột vào nút lệnh"
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": "Trong Javascript sự kiện Onclick thực hiện khi nào?",
+        "answers": [
+            "Khi một đối tượng trong form mất focus.",
+            "Khi một đối tượng trong form có focus",
+            "Khi click chuột vào một đối tượng trong form.",
+            "Khi click chuột vào nút lệnh"
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": "Lệnh lặp for có dạng như thế nào?",
+        "answers": [
+            "for ( biến = Giá trị đầu; Điều kiện; Giá trị tăng)",
+            "for ( biến = Giá trị đầu; Giá trị tăng; điều kiện)",
+            "for ( biến = Điều kiện; Giá trị tăng; Giá trị cuối)",
+            "Tất cả các dạng trên."
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Vòng lặp While là dạng vòng lặp?",
+        "answers": [
+            "Không xác định và xét điều kiện rồi mới lặp",
+            "Không xác định và  lặp rồi mới xét điều kiện",
+            "Cả hai dạng trên",
+            "Không tồn tại dạng nào ở trên"
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Vòng lặp (Do.. while) là dạng vòng lặp?",
+        "answers": [
+            "Không xác định và xét điều kiện rồi mới lặp",
+            "Không xác định và  lặp rồi mới xét điều kiện",
+            "Cả hai dạng trên",
+            "Không tồn tại dạng nào ở trên"
+        ],
+        "correct_answer": "1"
+    },
+    {
+        "question": "Lệnh break kết hợp với vòng for dùng để?",
+        "answers": [
+            "Ngưng vòng for nếu gặp lệnh này",
+            "Không có ý nghĩa trong vòng lặp",
+            "Nhảy đến một tập lệnh khác",
+            "Không thể kết hợp được."
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Hàm alert() dùng để làm gì?",
+        "answers": [
+            "Dùng để hiện một thông",
+            "Dùng để hiện một thông báo nhập",
+            "Dùng để chuyển đổi số sang chữ",
+            "Tất cả các dạng trên."
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Javascript là ngôn ngữ kịch bản có dấu được mã nguồn không?",
+        "answers": [
+            "Không dấu được vì các kịch bản chạy ở client",
+            "Dấu được vì chương trình hoạt động độc lập với trình duyệt",
+            "Hai phát biểu đều sai."
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Hàm alert() dùng để làm gì?",
+        "answers": [
+            "Dùng để hiện một thông",
+            "Dùng để hiện một thông báo nhập",
+            "Dùng để chuyển đổi số sang chữ",
+            "Tất cả các dạng trên."
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Thẻ <Frameset cols> </frameset>",
+        "answers": [
+            "Dùng để chia trang web ra nhiều phần theo cột",
+            "Dùng để chia trang web ra nhiều phần theo dòng",
+            "Tất cả dạng trên",
+            "Không có ý nào ở trên."
+        ],
+        "correct_answer": "0"
+    }
+]

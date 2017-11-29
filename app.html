@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="bower_components/toastr/toastr.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -125,7 +126,13 @@
     </div>
 
 </body>
-    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript " charset="utf-8 " async defer></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.js " type="text/javascript " charset="utf-8 " async defer></script>
-    <script src="watch.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript " charset="utf-8 "></script>
+    <script type="text/javascript">
+        $.getJSON('quizs.json')
+            .done(function (data) {
+               myList = data;
+               console.log(myList); 
+            });
+     
+    </script>
 </html>
