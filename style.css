@@ -1,0 +1,5 @@
+.backgound {
+	/*background-image: url("image.jpg");*/
+	background-repeat: repeat-y;
+	height:600px;
+}
