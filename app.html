@@ -1,131 +1,103 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>JSQiz</title>
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/toastr/toastr.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="col-md-10 backgound">
+   <head>
+      <title>JSQiz</title>
+      <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="bower_components/toastr/toastr.min.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="col-md-10 backgound">
             <div id="multiple">
-                <div class="">
-                    <button class="btn btn-success">Reset</button>
-                </div>
-                <div class="clearfix">
-                    
-                </div>
-                <div class="full-width" id="quiz-content" style="height: 100%; width: 100%;">
-                    <p style="margin-left:0.25in"><strong>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JavaScript là ngôn ngữ xử lý ở:</strong>
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Client
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Server
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Server/client
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không có dạng nào.
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.25in"><strong>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Javascript là ngôn ngữ thông dịch hay biên dịch</strong>
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thông dịch
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Diễn dịch
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cả hai dạng
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không có dạng nào ở trên
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.25in"><strong>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phương thức viết chương trình của Javascript như thế nào?</strong>
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Viết riêng một trang
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Viết chung với HTML
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cả hai dạng
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không có dạng nào.
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dùng để chia trang web ra nhiều phần theo cột&nbsp;
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dùng để chia trang web ra nhiều phần theo dòng
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tất cả dạng trên
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không có ý nào ở trên.
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.25in"><strong>30. Thẻ &lt;Frameset rows &gt; &lt;/frameset&gt;</strong>
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dùng để chia trang web ra nhiều phần theo cột
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dùng để chia trang web ra nhiều phần theo dòng
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tất cả dạng trên
-                        <br>
-
-                    </p>
-                    <p style="margin-left:0.75in">d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không có ý nào ở trên.
-                        <br>
-
-                    </p>
-                </div>
-                <div id='result'>
-</div>
-<div id="demo1" class="demo" style="text-align:center;font-size: 25px;">00:00:00</div>
+               <div class="pull-right">
+                  <button class="btn btn-success">Start</button>
+                  <button class="btn btn-success">Reset</button>
+               </div>
+               <div class="clearfix">
+               </div>
+               <div class="full-width" id="quiz-content" style="height: 100%; width: 100%;">
+                  <p style="margin-left:0.25in"><strong>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JavaScript là ngôn ngữ xử lý ở:</strong>
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Client
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Server
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Server/client
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không có dạng nào.
+                     <br>
+                  </p>
+                  <p style="margin-left:0.25in"><strong>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Javascript là ngôn ngữ thông dịch hay biên dịch</strong>
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thông dịch
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Diễn dịch
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cả hai dạng
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không có dạng nào ở trên
+                     <br>
+                  </p>
+                  <p style="margin-left:0.25in"><strong>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phương thức viết chương trình của Javascript như thế nào?</strong>
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Viết riêng một trang
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Viết chung với HTML
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cả hai dạng
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không có dạng nào.
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dùng để chia trang web ra nhiều phần theo cột&nbsp;
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dùng để chia trang web ra nhiều phần theo dòng
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tất cả dạng trên
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không có ý nào ở trên.
+                     <br>
+                  </p>
+                  <p style="margin-left:0.25in"><strong>30. Thẻ &lt;Frameset rows &gt; &lt;/frameset&gt;</strong>
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dùng để chia trang web ra nhiều phần theo cột
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dùng để chia trang web ra nhiều phần theo dòng
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tất cả dạng trên
+                     <br>
+                  </p>
+                  <p style="margin-left:0.75in">d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không có ý nào ở trên.
+                     <br>
+                  </p>
+               </div>
+               <div id='result'></div>
+               <div id="demo1" class="demo" style="text-align:center;font-size: 25px;">00:00:00</div>
             </div>
-        </div>
-    </div>
-    </div>
-
-</body>
-    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript " charset="utf-8 " async defer></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.js " type="text/javascript " charset="utf-8 " async defer></script>
-    <script src="watch.js"></script>
+         </div>
+      </div>
+      </div>
+   </body>
+   <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript " charset="utf-8 " async defer></script>
+   <script src="bower_components/bootstrap/dist/js/bootstrap.js " type="text/javascript " charset="utf-8 " async defer></script>
+   <script src="watch.js"></script>
 </html>
