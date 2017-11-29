@@ -93,11 +93,22 @@
                <div id='result'></div>
                <div id="demo1" class="demo" style="text-align:center;font-size: 25px;">00:00:00</div>
             </div>
-         </div>
-      </div>
-      </div>
-   </body>
-   <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript " charset="utf-8 " async defer></script>
-   <script src="bower_components/bootstrap/dist/js/bootstrap.js " type="text/javascript " charset="utf-8 " async defer></script>
-   <script src="watch.js"></script>
+        </div>
+    </div>
+    </div>
+</body>
+    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript " charset="utf-8 "></script>
+    <script type="text/javascript">
+        $.getJSON('quizs.json')
+            .done(function (data) {
+               myList = data;
+               for (var i = 0; i < myList.length; i++) {
+                     console.log(myList[i].correct_answer);
+                     var list = myList[i].answers
+                  for (var j = 0; j < list.length; j++) {
+                     console.log(list[j]);
+                  }
+               }
+            });
+    </script>
 </html>
