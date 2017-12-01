@@ -10,3 +10,7 @@
 .answers {
 	margin-left:0.75in;
 }
+
+.correct_answers {
+	font-weight: bold;
+}

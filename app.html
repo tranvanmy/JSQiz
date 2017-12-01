@@ -10,77 +10,25 @@
       <div class="container">
          <div class="col-md-10 backgound">
             <div id="multiple">
-               <div class="pull-right">
-                  <button class="btn btn-success">Start</button>
-                  <button class="btn btn-success">Reset</button>
-               </div>
                <div class="clearfix">
                </div>
                <form>
                <div class="full-width" id="quiz-content" style="height: 100%; width: 100%;">
                </div>
                <div id='result'></div>
-               <div id="submit" class="btn btn-success" style="text-align:center;font-size: 25px;">Submit</div>
+               <div id="submit" class="btn btn-success pull-right">Submit</div>
                </form>
+               <div class="clearfix">
+                  <div class="full-width" id="answer_content" style="height: 100%; width: 100%;">
+                  </div>
+                  <div id='finish_result'></div>
+               </div>
             </div>
         </div>
     </div>
     </div>
 </body>
     <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript " charset="utf-8 "></script>
-
-    <script type="text/javascript">
-        $.getJSON('quizs.json')
-            .done(function (data) {
-                var k = 0;
-                var html = '';
-                myList = data;
-                for (var i = 0; i < myList.length; i++) {
-                    html += "<p class='question' name = 'question-" + i + " ' >" + (i+1) + "." + myList[i].question + "</p>";
-
-                    var list = myList[i].answers
-                    html += "<div class='answers' id = '" + myList[i].id + "'>";
-                    for (var j = 0; j < list.length; j++) {
-                        html += "<input type='radio' name='answer-" + i + "' class='answer'  value='" + j + "'>" + list[j] + "<br>";
-                    }
-                    html += "</div>";
-                }
-                $('#quiz-content').html(html);
-
-                $(document).on('click', '.answer', function() {
-                    let value = parseInt($(this).val());
-                    var question = $(this).attr('name');
-                    let answer = $(this).parent().attr('id') - 1;                    
-                    var answer_correcrs = {};
-                    var array = [];
-                    correct_answer = myList[answer].correct_answer;
-
-                    if (value == correct_answer) {
-                        if (array.length == 0) {
-                            // console.log(array);
-                            answer_correcrs.question =  question;
-                            answer_correcrs.answer = correct_answer;
-                            array.push(answer_correcrs);
-                        console.log(array);
-                        } else {
-                        //     console.log(1);
-                        //     for (var q = 0; q < array.length; q++) {
-                        //     // if ( value == answer_correcrs[q]) {
-                        //     //     console.log("cau tra loi da co roi");
-
-                        //     // } else {
-                        //     // console.log(answer_correcrs);
-                        //     // }
-                        //     }   
-                        }
-                        // console.log(answer_correcrs);
-                    }
-                });
-
-                $(document).on('click', '#submit', function() {
-                    console.log(k);
-                })
-                
-            });
+    <script type="text/javascript" src="logic.js"></script>
     </script>
 </html>
