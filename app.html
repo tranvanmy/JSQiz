@@ -28,33 +28,55 @@
     </div>
 </body>
     <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript " charset="utf-8 "></script>
+
     <script type="text/javascript">
         $.getJSON('quizs.json')
             .done(function (data) {
-                k = 0;
-                myList = data;
+                var k = 0;
                 var html = '';
+                myList = data;
                 for (var i = 0; i < myList.length; i++) {
-                    html += "<p class='question' >" + (i+1) + "." + myList[i].question + "</p>";
+                    html += "<p class='question' name = 'question-" + i + " ' >" + (i+1) + "." + myList[i].question + "</p>";
 
                     var list = myList[i].answers
                     html += "<div class='answers' id = '" + myList[i].id + "'>";
                     for (var j = 0; j < list.length; j++) {
-                        html += "<input type='radio' name='answer-"+i+"' class='answer'  value='" + j + "'>" + list[j] + "<br>";
+                        html += "<input type='radio' name='answer-" + i + "' class='answer'  value='" + j + "'>" + list[j] + "<br>";
                     }
                     html += "</div>";
                 }
                 $('#quiz-content').html(html);
 
                 $(document).on('click', '.answer', function() {
-                    var value = parseInt($(this).val());
-                    answer = $(this).parent().attr('id') - 1;
-                    
+                    let value = parseInt($(this).val());
+                    var question = $(this).attr('name');
+                    let answer = $(this).parent().attr('id') - 1;                    
+                    var answer_correcrs = {};
+                    var array = [];
                     correct_answer = myList[answer].correct_answer;
+
                     if (value == correct_answer) {
-                        k = k+1;
+                        if (array.length == 0) {
+                            // console.log(array);
+                            answer_correcrs.question =  question;
+                            answer_correcrs.answer = correct_answer;
+                            array.push(answer_correcrs);
+                        console.log(array);
+                        } else {
+                        //     console.log(1);
+                        //     for (var q = 0; q < array.length; q++) {
+                        //     // if ( value == answer_correcrs[q]) {
+                        //     //     console.log("cau tra loi da co roi");
+
+                        //     // } else {
+                        //     // console.log(answer_correcrs);
+                        //     // }
+                        //     }   
+                        }
+                        // console.log(answer_correcrs);
                     }
                 });
+
                 $(document).on('click', '#submit', function() {
                     console.log(k);
                 })
