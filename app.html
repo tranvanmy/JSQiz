@@ -16,27 +16,11 @@
                </div>
                <div class="clearfix">
                </div>
-               <form action="app_submit" method="get" accept-charset="utf-8">
-                
+               <form>
                <div class="full-width" id="quiz-content" style="height: 100%; width: 100%;">
-                  <p style="margin-left:0.25in"><strong>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JavaScript là ngôn ngữ xử lý ở:</strong>
-                     <br>
-                  </p>
-                  <p style="margin-left:0.75in">a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Client
-                     <br>
-                  </p>
-                  <p style="margin-left:0.75in">b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Server
-                     <br>
-                  </p>
-                  <p style="margin-left:0.75in">c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Server/client
-                     <br>
-                  </p>
-                  <p style="margin-left:0.75in">d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không có dạng nào.
-                     <br>
-                  </p>
                </div>
                <div id='result'></div>
-               <div id="demo1" class="demo" style="text-align:center;font-size: 25px;">00:00:00</div>
+               <div id="submit" class="btn btn-success" style="text-align:center;font-size: 25px;">Submit</div>
                </form>
             </div>
         </div>
@@ -47,14 +31,34 @@
     <script type="text/javascript">
         $.getJSON('quizs.json')
             .done(function (data) {
-               myList = data;
-               for (var i = 0; i < myList.length; i++) {
-                     console.log(myList[i].correct_answer);
-                     var list = myList[i].answers
-                  for (var j = 0; j < list.length; j++) {
-                     console.log(list[j]);
-                  }
-               }
+                k = 0;
+                myList = data;
+                var html = '';
+                for (var i = 0; i < myList.length; i++) {
+                    html += "<p class='question' >" + (i+1) + "." + myList[i].question + "</p>";
+
+                    var list = myList[i].answers
+                    html += "<div class='answers' id = '" + myList[i].id + "'>";
+                    for (var j = 0; j < list.length; j++) {
+                        html += "<input type='radio' name='answer-"+i+"' class='answer'  value='" + j + "'>" + list[j] + "<br>";
+                    }
+                    html += "</div>";
+                }
+                $('#quiz-content').html(html);
+
+                $(document).on('click', '.answer', function() {
+                    var value = parseInt($(this).val());
+                    answer = $(this).parent().attr('id') - 1;
+                    
+                    correct_answer = myList[answer].correct_answer;
+                    if (value == correct_answer) {
+                        k = k+1;
+                    }
+                });
+                $(document).on('click', '#submit', function() {
+                    console.log(k);
+                })
+                
             });
     </script>
 </html>
